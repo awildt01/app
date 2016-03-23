@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+         <!-- XML Schema Generated from XML Document on Sun Jan 03 2016 14:53:14 GMT+0100 -->
+         <!-- with XmlGrid.net Free Online Service http://xmlgrid.net -->
+         <xs:element name="sports-content">
+               <xs:complexType>
+                     <xs:sequence>
+                           <xs:element name="sports-metadata">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element name="sports-title" type="xs:string"></xs:element>
+                                             <xs:element name="sports-content-codes">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="sports-content-code" maxOccurs="unbounded">
+                                                                     <xs:complexType>
+                                                                           <xs:attribute name="code-type" type="xs:string"></xs:attribute>
+                                                                           <xs:attribute name="code-key" type="xs:string"></xs:attribute>
+                                                                           <xs:attribute name="code-source" type="xs:string"></xs:attribute>
+                                                                           <xs:attribute name="code-name" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                         </xs:sequence>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                       </xs:sequence>
+                                       <xs:attribute name="date-time" type="xs:string"></xs:attribute>
+                                       <xs:attribute name="doc-id" type="xs:string"></xs:attribute>
+                                       <xs:attribute name="language" type="xs:string"></xs:attribute>
+                                 </xs:complexType>
+                           </xs:element>
+                           <xs:element name="tournament">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element name="tournament-metadata">
+                                                   <xs:complexType>
+                                                         <xs:attribute name="tournament-name" type="xs:string"></xs:attribute>
+                                                         <xs:attribute name="tournament-key" type="xs:string"></xs:attribute>
+                                                         <xs:attribute name="tournament-source" type="xs:string"></xs:attribute>
+                                                         <xs:attribute name="date-coverage-type" type="xs:string"></xs:attribute>
+                                                         <xs:attribute name="date-coverage-value" type="xs:string"></xs:attribute>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                             <xs:element name="tournament-division">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="tournament-division-metadata">
+                                                                     <xs:complexType>
+                                                                           <xs:attribute name="division-name" type="xs:string"></xs:attribute>
+                                                                           <xs:attribute name="division-key" type="xs:string"></xs:attribute>
+                                                                           <xs:attribute name="division-source" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="tournament-round">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="sports-event">
+                                                                                       <xs:complexType>
+                                                                                             <xs:sequence>
+                                                                                                   <xs:element name="event-metadata">
+                                                                                                         <xs:complexType>
+                                                                                                               <xs:sequence>
+                                                                                                                     <xs:element name="event-metadata-soccer">
+                                                                                                                           <xs:complexType>
+                                                                                                                                 <xs:sequence>
+                                                                                                                                       <xs:element name="time-adjustment">
+                                                                                                                                             <xs:complexType>
+                                                                                                                                                   <xs:attribute name="period-extra-time-elapsed" type="xs:string"></xs:attribute>
+                                                                                                                                             </xs:complexType>
+                                                                                                                                       </xs:element>
+                                                                                                                                 </xs:sequence>
+                                                                                                                                 <xs:attribute name="period-value" type="xs:string"></xs:attribute>
+                                                                                                                                 <xs:attribute name="minutes-elapsed" type="xs:string"></xs:attribute>
+                                                                                                                                 <xs:attribute name="period-minute-elapsed" type="xs:string"></xs:attribute>
+                                                                                                                           </xs:complexType>
+                                                                                                                     </xs:element>
+                                                                                                               </xs:sequence>
+                                                                                                               <xs:attribute name="id" type="xs:string"></xs:attribute>
+                                                                                                               <xs:attribute name="event-key" type="xs:string"></xs:attribute>
+                                                                                                               <xs:attribute name="event-status" type="xs:string"></xs:attribute>
+                                                                                                               <xs:attribute name="start-date-time" type="xs:string"></xs:attribute>
+                                                                                                               <xs:attribute name="start-weekday" type="xs:string"></xs:attribute>
+                                                                                                               <xs:attribute name="heat-number" type="xs:string"></xs:attribute>
+                                                                                                               <xs:attribute name="date-coverage-type" type="xs:string"></xs:attribute>
+                                                                                                               <xs:attribute name="date-coverage-value" type="xs:string"></xs:attribute>
+                                                                                                               <xs:attribute name="site-attendance" type="xs:string"></xs:attribute>
+                                                                                                               <xs:attribute name="live-period" type="xs:string"></xs:attribute>
+                                                                                                               <xs:attribute name="has-overtime" type="xs:string"></xs:attribute>
+                                                                                                               <xs:attribute name="has-overtime2" type="xs:string"></xs:attribute>
+                                                                                                               <xs:attribute name="has-penalty-shootout" type="xs:string"></xs:attribute>
+                                                                                                         </xs:complexType>
+                                                                                                   </xs:element>
+                                                                                                   <xs:element name="team" maxOccurs="unbounded">
+                                                                                                         <xs:complexType>
+                                                                                                               <xs:sequence>
+                                                                                                                     <xs:element name="team-metadata">
+                                                                                                                           <xs:complexType>
+                                                                                                                                 <xs:sequence>
+                                                                                                                                       <xs:element name="name">
+                                                                                                                                             <xs:complexType>
+                                                                                                                                                   <xs:attribute name="full" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="nickname" type="xs:string"></xs:attribute>
+                                                                                                                                             </xs:complexType>
+                                                                                                                                       </xs:element>
+                                                                                                                                 </xs:sequence>
+                                                                                                                                 <xs:attribute name="id" type="xs:string"></xs:attribute>
+                                                                                                                                 <xs:attribute name="team-key" type="xs:string"></xs:attribute>
+                                                                                                                                 <xs:attribute name="alignment" type="xs:string"></xs:attribute>
+                                                                                                                                 <xs:attribute name="uniform-color-name" type="xs:string"></xs:attribute>
+                                                                                                                                 <xs:attribute name="uniform-color-hex" type="xs:string"></xs:attribute>
+                                                                                                                           </xs:complexType>
+                                                                                                                     </xs:element>
+                                                                                                                     <xs:element name="team-stats">
+                                                                                                                           <xs:complexType>
+                                                                                                                                 <xs:sequence>
+                                                                                                                                       <xs:element name="sub-score" maxOccurs="unbounded">
+                                                                                                                                             <xs:complexType>
+                                                                                                                                                   <xs:attribute name="period-value" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="score" type="xs:string"></xs:attribute>
+                                                                                                                                             </xs:complexType>
+                                                                                                                                       </xs:element>
+                                                                                                                                 </xs:sequence>
+                                                                                                                                 <xs:attribute name="score" type="xs:string"></xs:attribute>
+                                                                                                                           </xs:complexType>
+                                                                                                                     </xs:element>
+                                                                                                                     <xs:element name="player" maxOccurs="unbounded">
+                                                                                                                           <xs:complexType>
+                                                                                                                                 <xs:sequence>
+                                                                                                                                       <xs:element name="player-metadata">
+                                                                                                                                             <xs:complexType>
+                                                                                                                                                   <xs:sequence>
+                                                                                                                                                         <xs:element name="name">
+                                                                                                                                                               <xs:complexType>
+                                                                                                                                                                     <xs:attribute name="full" type="xs:string"></xs:attribute>
+                                                                                                                                                                     <xs:attribute name="nickname" type="xs:string"></xs:attribute>
+                                                                                                                                                                     <xs:attribute name="last" type="xs:string"></xs:attribute>
+                                                                                                                                                               </xs:complexType>
+                                                                                                                                                         </xs:element>
+                                                                                                                                                   </xs:sequence>
+                                                                                                                                                   <xs:attribute name="id" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="player-key" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="position-regular" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="position-event" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="x-coordinate" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="y-coordinate" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="yellow-cards" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="status" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="uniform-number" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="vis-x" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="vis-y" type="xs:string"></xs:attribute>
+                                                                                                                                             </xs:complexType>
+                                                                                                                                       </xs:element>
+                                                                                                                                 </xs:sequence>
+                                                                                                                           </xs:complexType>
+                                                                                                                     </xs:element>
+                                                                                                                     <xs:element name="associate">
+                                                                                                                           <xs:complexType>
+                                                                                                                                 <xs:sequence>
+                                                                                                                                       <xs:element name="associate-metadata">
+                                                                                                                                             <xs:complexType>
+                                                                                                                                                   <xs:sequence>
+                                                                                                                                                         <xs:element name="name">
+                                                                                                                                                               <xs:complexType>
+                                                                                                                                                                     <xs:attribute name="full" type="xs:string"></xs:attribute>
+                                                                                                                                                                     <xs:attribute name="nickname" type="xs:string"></xs:attribute>
+                                                                                                                                                               </xs:complexType>
+                                                                                                                                                         </xs:element>
+                                                                                                                                                   </xs:sequence>
+                                                                                                                                                   <xs:attribute name="id" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="associate-key" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="position" type="xs:string"></xs:attribute>
+                                                                                                                                             </xs:complexType>
+                                                                                                                                       </xs:element>
+                                                                                                                                 </xs:sequence>
+                                                                                                                           </xs:complexType>
+                                                                                                                     </xs:element>
+                                                                                                               </xs:sequence>
+                                                                                                         </xs:complexType>
+                                                                                                   </xs:element>
+                                                                                                   <xs:element name="officials">
+                                                                                                         <xs:complexType>
+                                                                                                               <xs:sequence>
+                                                                                                                     <xs:element name="official">
+                                                                                                                           <xs:complexType>
+                                                                                                                                 <xs:sequence>
+                                                                                                                                       <xs:element name="official-metadata">
+                                                                                                                                             <xs:complexType>
+                                                                                                                                                   <xs:sequence>
+                                                                                                                                                         <xs:element name="name">
+                                                                                                                                                               <xs:complexType>
+                                                                                                                                                                     <xs:attribute name="full" type="xs:string"></xs:attribute>
+                                                                                                                                                                     <xs:attribute name="nickname" type="xs:string"></xs:attribute>
+                                                                                                                                                                     <xs:attribute name="city" type="xs:string"></xs:attribute>
+                                                                                                                                                               </xs:complexType>
+                                                                                                                                                         </xs:element>
+                                                                                                                                                   </xs:sequence>
+                                                                                                                                                   <xs:attribute name="official-key" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="position" type="xs:string"></xs:attribute>
+                                                                                                                                             </xs:complexType>
+                                                                                                                                       </xs:element>
+                                                                                                                                 </xs:sequence>
+                                                                                                                           </xs:complexType>
+                                                                                                                     </xs:element>
+                                                                                                               </xs:sequence>
+                                                                                                         </xs:complexType>
+                                                                                                   </xs:element>
+                                                                                                   <xs:element name="event-actions">
+                                                                                                         <xs:complexType>
+                                                                                                               <xs:sequence>
+                                                                                                                     <xs:element name="event-actions-soccer">
+                                                                                                                           <xs:complexType>
+                                                                                                                                 <xs:sequence>
+                                                                                                                                        <xs:element name="action-soccer-other" maxOccurs="unbounded">
+                                                                                                                                             <xs:complexType>
+                                                                                                                                                   <xs:attribute name="id" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="action-type" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="freekick-type" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="team-idref" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="player-idref" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="second-player-idref" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="period-value" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="minutes-elapsed" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="timestamp" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="x1" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="y1" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="x2" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="y2" type="xs:string"></xs:attribute>
+                                                                                                                                             </xs:complexType>
+                                                                                                                                       </xs:element>
+                                                                                                                                       <xs:element name="action-soccer-score-attempt" maxOccurs="unbounded">
+                                                                                                                                             <xs:complexType>
+                                                                                                                                                   <xs:sequence>
+                                                                                                                                                         <xs:element name="action-soccer-assisting-player">
+                                                                                                                                                               <xs:complexType>
+                                                                                                                                                                     <xs:attribute name="player-idref" type="xs:string"></xs:attribute>
+                                                                                                                                                               </xs:complexType>
+                                                                                                                                                         </xs:element>
+                                                                                                                                                   </xs:sequence>
+                                                                                                                                                   <xs:attribute name="id" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="team-idref" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="player-idref" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="second-player-idref" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="score-attempt-method" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="score-attempt-type" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="score-attempt-result" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="score-attempt-position" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="score-attempt-counterattack" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="score-attempt-quality" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="period-value" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="minutes-elapsed" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="timestamp" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="x1" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="y1" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="x2" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="y2" type="xs:string"></xs:attribute>
+                                                                                                                                             </xs:complexType>
+                                                                                                                                       </xs:element>
+                                                                                                                                       <xs:element name="action-soccer-score" maxOccurs="unbounded">
+                                                                                                                                             <xs:complexType>
+                                                                                                                                                   <xs:sequence>
+                                                                                                                                                         <xs:element name="action-soccer-assisting-player">
+                                                                                                                                                               <xs:complexType>
+                                                                                                                                                                     <xs:attribute name="player-idref" type="xs:string"></xs:attribute>
+                                                                                                                                                               </xs:complexType>
+                                                                                                                                                         </xs:element>
+                                                                                                                                                   </xs:sequence>
+                                                                                                                                                   <xs:attribute name="id" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="team-idref" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="player-idref" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="score-team" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="score-team-opposing" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="score-attempt-method" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="score-attempt-type" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="score-type" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="score-attempt-position" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="score-attempt-counterattack" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="score-attempt-quality" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="period-value" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="minutes-elapsed" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="timestamp" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="x1" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="y1" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="x2" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="y2" type="xs:string"></xs:attribute>
+                                                                                                                                             </xs:complexType>
+                                                                                                                                       </xs:element>
+                                                                                                                                       <xs:element name="action-soccer-foul" maxOccurs="unbounded">
+                                                                                                                                             <xs:complexType>
+                                                                                                                                                   <xs:attribute name="id" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="fouled-team-idref" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="fouled-player-idref" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="fouling-team-idref" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="fouling-player-idref" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="period-value" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="minutes-elapsed" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="timestamp" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="x1" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="y1" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="x2" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="y2" type="xs:string"></xs:attribute>
+                                                                                                                                             </xs:complexType>
+                                                                                                                                       </xs:element>
+                                                                                                                                       <xs:element name="action-soccer-penalty" maxOccurs="unbounded">
+                                                                                                                                             <xs:complexType>
+                                                                                                                                                   <xs:attribute name="id" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="team-idref" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="recipient-idref" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="recipient-type" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="penalty-level" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="period-value" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="minutes-elapsed" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="timestamp" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="x1" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="y1" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="x2" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="y2" type="xs:string"></xs:attribute>
+                                                                                                                                             </xs:complexType>
+                                                                                                                                       </xs:element>
+                                                                                                                                       <xs:element name="action-soccer-offside" maxOccurs="unbounded">
+                                                                                                                                             <xs:complexType>
+                                                                                                                                                   <xs:attribute name="id" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="team-idref" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="player-offside-idref" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="player-passing-idref" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="period-value" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="minutes-elapsed" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="timestamp" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="x1" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="y1" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="x2" type="xs:string"></xs:attribute>
+                                                                                                                                                   <xs:attribute name="y2" type="xs:string"></xs:attribute>
+                                                                                                                                             </xs:complexType>
+                                                                                                                                       </xs:element>
+                                                                                                                                 </xs:sequence>
+                                                                                                                           </xs:complexType>
+                                                                                                                     </xs:element>
+                                                                                                               </xs:sequence>
+                                                                                                         </xs:complexType>
+                                                                                                   </xs:element>
+                                                                                             </xs:sequence>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                           </xs:sequence>
+                                                                           <xs:attribute name="round-number" type="xs:string"></xs:attribute>
+                                                                           <xs:attribute name="round-name" type="xs:string"></xs:attribute>
+                                                                           <xs:attribute name="round-key" type="xs:string"></xs:attribute>
+                                                                           <xs:attribute name="round-source" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                         </xs:sequence>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                       </xs:sequence>
+                                 </xs:complexType>
+                           </xs:element>
+                     </xs:sequence>
+                     <xs:attribute name="xmlnsimp" type="xs:string"></xs:attribute>
+               </xs:complexType>
+         </xs:element>
+   </xs:schema>
