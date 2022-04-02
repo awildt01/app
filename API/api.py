@@ -15,7 +15,7 @@ model = joblib.load(open(os.path.join('API/model/model.pkl'),"rb"))
 st.set_page_config(page_title="Random Forest", page_icon="🌱")
 
 
-st.sidebar.image('static/rf team2.png', use_column_width=True )
+st.sidebar.image('API/static/rf team2.png', use_column_width=True )
 st.sidebar.title('Menu')
 pagSelecionada = st.sidebar.selectbox('Escolha uma seção',['Home','EDA', 'Previsão de vendas', 'Arquitetura do Projeto', 'Premissas, objetivos e desafios', 'Equipe e Agradecimentos'])
 
