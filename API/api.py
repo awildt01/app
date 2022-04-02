@@ -9,7 +9,7 @@ import streamlit.components.v1 as components
 import streamlit as st
 
 #model = joblib.load('model.pkl')
-model = joblib.load(open(os.path.join('model/model.pkl'),"rb"))
+model = joblib.load(open(os.path.join('API/model/model.pkl'),"rb"))
 
 
 st.set_page_config(page_title="Random Forest", page_icon="🌱")
