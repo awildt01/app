@@ -26,19 +26,19 @@ if pagSelecionada == 'Home':
     col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
-        img = Image.open("static/rf2.png" ) 
+        img = Image.open("API/static/rf2.png" ) 
         st.image(img)
     with col2:
-        img = Image.open("static/rf2.png" ) 
+        img = Image.open("API/static/rf2.png" ) 
         st.image(img)
     with col3:
-        img = Image.open("static/rf3 logo.png" ) 
+        img = Image.open("API/static/rf3 logo.png" ) 
         st.image(img)
     with col4:
-        img = Image.open("static/rf2.png" ) 
+        img = Image.open("API/static/rf2.png" ) 
         st.image(img)
     with col5:
-        img = Image.open("static/rf2.png" ) 
+        img = Image.open("API/static/rf2.png" ) 
         st.image(img)
 
     st.title("Bem-vindo!")  
