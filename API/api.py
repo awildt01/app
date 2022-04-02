@@ -237,7 +237,7 @@ elif pagSelecionada == 'Arquitetura do Projeto':
     
     st.markdown('Para a nosssa engenharia de dados obtemos uma solução em cloud com o Databricks que nos deu a oportunidade de trabalhar com uma technologia basseada em Apache Spark.')
     st.markdown('A organização e o processo das datas (Data Lake) foi feita no Databricks.')
-    img = Image.open("Roadmap2.jpg" ) 
+    img = Image.open("API/static/Roadmap2.jpg" ) 
     st.image(img)
 
 
