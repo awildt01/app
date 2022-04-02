@@ -60,19 +60,19 @@ elif pagSelecionada == 'EDA':
     col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
-        img = Image.open("static/rf2.png" ) 
+        img = Image.open("API/static/rf2.png" ) 
         st.image(img)
     with col2:
-        img = Image.open("static/rf2.png" ) 
+        img = Image.open("API/static/rf2.png" ) 
         st.image(img)
     with col3:
-        img = Image.open("static/rf3 logo.png" ) 
+        img = Image.open("API/static/rf3 logo.png" ) 
         st.image(img)
     with col4:
-        img = Image.open("static/rf2.png" ) 
+        img = Image.open("API/static/rf2.png" ) 
         st.image(img)
     with col5:
-        img = Image.open("static/rf2.png" ) 
+        img = Image.open("API/static/rf2.png" ) 
         st.image(img)
     
     st.title("Análise Exploratória dos dados")
@@ -84,19 +84,19 @@ elif pagSelecionada == 'Previsão de vendas':
     col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
-        img = Image.open("static/rf2.png" ) 
+        img = Image.open("API/static/rf2.png" ) 
         st.image(img)
     with col2:
-        img = Image.open("static/rf2.png" ) 
+        img = Image.open("API/static/rf2.png" ) 
         st.image(img)
     with col3:
-        img = Image.open("static/rf3 logo.png" ) 
+        img = Image.open("API/static/rf3 logo.png" ) 
         st.image(img)
     with col4:
-        img = Image.open("static/rf2.png" ) 
+        img = Image.open("API/static/rf2.png" ) 
         st.image(img)
     with col5:
-        img = Image.open("static/rf2.png" ) 
+        img = Image.open("API/static/rf2.png" ) 
         st.image(img)
 
     st.title("Cross-Selling: Previsão de vendas")
@@ -178,10 +178,10 @@ elif pagSelecionada == 'Previsão de vendas':
 
 
         if classe == 1:
-            image = Image.open('static/sim.jpg')
+            image = Image.open('API/static/sim.jpg')
             st.image(image)
         else:
-            image = Image.open('static/nao.jpg')
+            image = Image.open('API/static/nao.jpg')
             st.image(image)
 
         st.write("Avaliando outros canais de venda:")
@@ -220,16 +220,16 @@ elif pagSelecionada == 'Arquitetura do Projeto':
         img = Image.open("static/rf2.png" ) 
         st.image(img)
     with col2:
-        img = Image.open("static/rf2.png" ) 
+        img = Image.open("API/static/rf2.png" ) 
         st.image(img)
     with col3:
-        img = Image.open("static/rf3 logo.png" ) 
+        img = Image.open("API/static/rf3 logo.png" ) 
         st.image(img)
     with col4:
-        img = Image.open("static/rf2.png" ) 
+        img = Image.open("API/static/rf2.png" ) 
         st.image(img)
     with col5:
-        img = Image.open("static/rf2.png" ) 
+        img = Image.open("API/static/rf2.png" ) 
         st.image(img)
 
 
@@ -247,19 +247,19 @@ elif pagSelecionada == 'Premissas, objetivos e desafios':
     col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
-        img = Image.open("static/rf2.png" ) 
+        img = Image.open("API/static/rf2.png" ) 
         st.image(img)
     with col2:
-        img = Image.open("static/rf2.png" ) 
+        img = Image.open("API/static/rf2.png" ) 
         st.image(img)
     with col3:
-        img = Image.open("static/rf3 logo.png" ) 
+        img = Image.open("API/static/rf3 logo.png" ) 
         st.image(img)
     with col4:
-        img = Image.open("static/rf2.png" ) 
+        img = Image.open("API/static/rf2.png" ) 
         st.image(img)
     with col5:
-        img = Image.open("static/rf2.png" ) 
+        img = Image.open("API/static/rf2.png" ) 
         st.image(img)
 
     st.title("Premissas, objetivos e desafios")
@@ -283,7 +283,7 @@ elif pagSelecionada == 'Premissas, objetivos e desafios':
     st.write('- Desenvolvimento de APIs em StreamLit e prototipação em Flask (Disponivel no repositório do github)')
  
 
-    img = Image.open("static/kisspng2.jpg" ) 
+    img = Image.open("API/static/kisspng2.jpg" ) 
     st.image(img)
 
 elif pagSelecionada == 'Equipe e Agradecimentos':
@@ -292,22 +292,22 @@ elif pagSelecionada == 'Equipe e Agradecimentos':
     col1, col2, col3 = st.columns(3)
 
     with col1:
-        img = Image.open("static/AG.png" ) 
+        img = Image.open("API/static/AG.png" ) 
         st.image(img)
         st.write('')
-        img = Image.open("static/BF.png" ) 
+        img = Image.open("API/static/BF.png" ) 
         st.image(img) 
         st.write('')
-        img = Image.open("static/LC.png" ) 
+        img = Image.open("API/static/LC.png" ) 
         st.image(img)
         st.write('')
-        img = Image.open("static/WG.png" ) 
+        img = Image.open("API/static/WG.png" ) 
         st.image(img)    
 
 
     with col2:
 
-        st.markdown("**Alexandre Graziani Wildt**")
+        st.markdown("**Alexandre Wildt Graziani**")
         st.write('Data Scientist')
         st.markdown('[LinkedIn](https://www.linkedin.com/in/alexandre-wildt-graziani-73638b15a/?originalSubdomain=de)')
         
