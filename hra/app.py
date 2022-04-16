@@ -8,7 +8,7 @@ from pycaret.classification import load_model, predict_model
 
 #Data Lake
 client = Minio(
-        "localhost:9000",
+        "localhost:9001",
         access_key="minioadmin",
         secret_key="minioadmin",
         secure=False
