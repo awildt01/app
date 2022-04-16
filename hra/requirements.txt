@@ -5,4 +5,4 @@ joblib==1.0.1
 matplotlib==3.4.3
 pycaret==2.3.10
 pillow==7.2.0
-click<==8.0.4
+
